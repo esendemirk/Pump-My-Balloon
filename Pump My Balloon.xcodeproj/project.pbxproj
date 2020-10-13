@@ -13,6 +13,12 @@
 		27661856253417A20020FDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27661855253417A20020FDDB /* Assets.xcassets */; };
 		27661859253417A20020FDDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27661858253417A20020FDDB /* Preview Assets.xcassets */; };
 		2766185C253417A20020FDDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2766185A253417A20020FDDB /* LaunchScreen.storyboard */; };
+		27661865253418180020FDDB /* Digitalt-04no.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27661864253418180020FDDB /* Digitalt-04no.ttf */; };
+		2766187525341E460020FDDB /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766187425341E460020FDDB /* Balloon.swift */; };
+		27661879253427D90020FDDB /* ColorMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27661878253427D90020FDDB /* ColorMgr.swift */; };
+		2768F2792535309F0010C516 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F2782535309F0010C516 /* StartView.swift */; };
+		2768F27C253531900010C516 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F27B253531900010C516 /* PlaySound.swift */; };
+		2768F27F253531EA0010C516 /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F27E253531EA0010C516 /* Navigate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		27661858253417A20020FDDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2766185B253417A20020FDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2766185D253417A20020FDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27661864253418180020FDDB /* Digitalt-04no.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digitalt-04no.ttf"; sourceTree = "<group>"; };
+		2766187425341E460020FDDB /* Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
+		27661878253427D90020FDDB /* ColorMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMgr.swift; sourceTree = "<group>"; };
+		2768F2782535309F0010C516 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		2768F27B253531900010C516 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		2768F27E253531EA0010C516 /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +68,19 @@
 		2766184E2534179F0020FDDB /* Pump My Balloon */ = {
 			isa = PBXGroup;
 			children = (
+				27661864253418180020FDDB /* Digitalt-04no.ttf */,
 				2766184F253417A00020FDDB /* AppDelegate.swift */,
 				27661851253417A00020FDDB /* SceneDelegate.swift */,
 				27661853253417A00020FDDB /* ContentView.swift */,
+				2768F27E253531EA0010C516 /* Navigate.swift */,
+				2768F2782535309F0010C516 /* StartView.swift */,
 				27661855253417A20020FDDB /* Assets.xcassets */,
 				2766185A253417A20020FDDB /* LaunchScreen.storyboard */,
 				2766185D253417A20020FDDB /* Info.plist */,
 				27661857253417A20020FDDB /* Preview Content */,
+				2766187425341E460020FDDB /* Balloon.swift */,
+				27661878253427D90020FDDB /* ColorMgr.swift */,
+				2768F27B253531900010C516 /* PlaySound.swift */,
 			);
 			path = "Pump My Balloon";
 			sourceTree = "<group>";
@@ -133,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2766185C253417A20020FDDB /* LaunchScreen.storyboard in Resources */,
+				27661865253418180020FDDB /* Digitalt-04no.ttf in Resources */,
 				27661859253417A20020FDDB /* Preview Assets.xcassets in Resources */,
 				27661856253417A20020FDDB /* Assets.xcassets in Resources */,
 			);
@@ -145,8 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2768F27F253531EA0010C516 /* Navigate.swift in Sources */,
 				27661850253417A00020FDDB /* AppDelegate.swift in Sources */,
+				2768F27C253531900010C516 /* PlaySound.swift in Sources */,
+				27661879253427D90020FDDB /* ColorMgr.swift in Sources */,
 				27661852253417A00020FDDB /* SceneDelegate.swift in Sources */,
+				2768F2792535309F0010C516 /* StartView.swift in Sources */,
+				2766187525341E460020FDDB /* Balloon.swift in Sources */,
 				27661854253417A00020FDDB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +315,7 @@
 				DEVELOPMENT_TEAM = 925MKJV2P3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Pump My Balloon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +337,7 @@
 				DEVELOPMENT_TEAM = 925MKJV2P3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Pump My Balloon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
