@@ -19,6 +19,10 @@
 		2768F2792535309F0010C516 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F2782535309F0010C516 /* StartView.swift */; };
 		2768F27C253531900010C516 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F27B253531900010C516 /* PlaySound.swift */; };
 		2768F27F253531EA0010C516 /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F27E253531EA0010C516 /* Navigate.swift */; };
+		2768F28325353F120010C516 /* pump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2768F28225353F120010C516 /* pump.mp3 */; };
+		2768F28825354BD10010C516 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2768F28625354BD00010C516 /* gameover.mp3 */; };
+		27A2BF552537A6BF009C89F8 /* HowToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2BF542537A6BF009C89F8 /* HowToView.swift */; };
+		27D090112536BAF8000920F6 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D090102536BAF8000920F6 /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		2768F2782535309F0010C516 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		2768F27B253531900010C516 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		2768F27E253531EA0010C516 /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
+		2768F28225353F120010C516 /* pump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pump.mp3; sourceTree = "<group>"; };
+		2768F28625354BD00010C516 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		27A2BF542537A6BF009C89F8 /* HowToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToView.swift; sourceTree = "<group>"; };
+		27D090102536BAF8000920F6 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 		2766184E2534179F0020FDDB /* Pump My Balloon */ = {
 			isa = PBXGroup;
 			children = (
+				2768F28225353F120010C516 /* pump.mp3 */,
+				2768F28625354BD00010C516 /* gameover.mp3 */,
 				27661864253418180020FDDB /* Digitalt-04no.ttf */,
 				2766184F253417A00020FDDB /* AppDelegate.swift */,
 				27661851253417A00020FDDB /* SceneDelegate.swift */,
@@ -81,6 +91,8 @@
 				2766187425341E460020FDDB /* Balloon.swift */,
 				27661878253427D90020FDDB /* ColorMgr.swift */,
 				2768F27B253531900010C516 /* PlaySound.swift */,
+				27D090102536BAF8000920F6 /* ScoreView.swift */,
+				27A2BF542537A6BF009C89F8 /* HowToView.swift */,
 			);
 			path = "Pump My Balloon";
 			sourceTree = "<group>";
@@ -150,8 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2768F28825354BD10010C516 /* gameover.mp3 in Resources */,
 				2766185C253417A20020FDDB /* LaunchScreen.storyboard in Resources */,
 				27661865253418180020FDDB /* Digitalt-04no.ttf in Resources */,
+				2768F28325353F120010C516 /* pump.mp3 in Resources */,
 				27661859253417A20020FDDB /* Preview Assets.xcassets in Resources */,
 				27661856253417A20020FDDB /* Assets.xcassets in Resources */,
 			);
@@ -166,7 +180,9 @@
 			files = (
 				2768F27F253531EA0010C516 /* Navigate.swift in Sources */,
 				27661850253417A00020FDDB /* AppDelegate.swift in Sources */,
+				27D090112536BAF8000920F6 /* ScoreView.swift in Sources */,
 				2768F27C253531900010C516 /* PlaySound.swift in Sources */,
+				27A2BF552537A6BF009C89F8 /* HowToView.swift in Sources */,
 				27661879253427D90020FDDB /* ColorMgr.swift in Sources */,
 				27661852253417A00020FDDB /* SceneDelegate.swift in Sources */,
 				2768F2792535309F0010C516 /* StartView.swift in Sources */,

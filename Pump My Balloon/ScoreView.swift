@@ -1,14 +1,14 @@
 //
-//  StartView.swift
+//  ScoreView.swift
 //  Pump My Balloon
 //
-//  Created by Kaan Esendemir on 10/12/20.
+//  Created by Kaan Esendemir on 10/14/20.
 //
 
 import SwiftUI
 
-struct StartView: View {
-    @State private var scale: CGFloat = 1
+struct ScoreView: View {
+    @State var highScore = UserDefaults.standard.integer(forKey: "highScore")
     
     var body: some View {
         
@@ -22,43 +22,25 @@ struct StartView: View {
                 
                 Spacer()
                 
-                Text("Pump My Balloon").font(.custom("Digitalt", size: 45)).foregroundColor(ColorMgr.dirtywhite).shadow(radius: 2).multilineTextAlignment(.center)
-                //Text("Inflate the balloon!").font(.custom("Digitalt", size: 20)).foregroundColor(ColorMgr.dirtywhite).shadow(radius: 2)
+                Text("High Score").font(.custom("Digitalt", size: 45)).foregroundColor(ColorMgr.dirtywhite).shadow(radius: 2).multilineTextAlignment(.center)
                 
                 Spacer()
                 
-                Button(action: {
-                    if(scale <= 2.4) {
-                        self.scale += 0.05
-                        print(scale)
-                    }
-                    
-                        }) {
-                            
-                    Balloon()
-                    .scaleEffect(scale)
-                    .animation(Animation.easeOut(duration: 1))
+                VStack {
+                    Text("\(highScore)").font(.custom("Digitalt", size: 60)).foregroundColor(ColorMgr.dirtywhite).shadow(radius: 2)
+                    Text("Balloons").font(.custom("Digitalt", size: 40)).foregroundColor(ColorMgr.dirtywhite).shadow(radius: 2)
                 }
                 
                 Spacer()
                 
-                Button(action: navigateToContentView) {
-                    HStack(alignment: .center) {
-                        Text("Play").font(.custom("Digitalt", size: 26)).foregroundColor(ColorMgr.mattered)
-                    }
-                }.frame(minWidth: 0, maxWidth: .infinity)
-                .frame(height: 70)
-                .foregroundColor(.blue)
-                .font(.system(size: 14, weight: .bold))
-                .background(ColorMgr.dirtywhite)
-                .cornerRadius(5)
-                .padding(.bottom, 10)
+                
+                Spacer()
                     
                 HStack {
                     // Button to navigate to high score screen
-                    Button(action: navigateToScoreView) {
+                    Button(action: navigateToStartView) {
                         HStack(alignment: .center) {
-                            Text("Score").font(.custom("Digitalt", size: 26)).foregroundColor(ColorMgr.mattered)
+                            Text("Home").font(.custom("Digitalt", size: 26)).foregroundColor(ColorMgr.mattered)
                         }
                     }.frame(minWidth: 0, maxWidth: .infinity)
                     .frame(height: 70)
@@ -82,5 +64,7 @@ struct StartView: View {
                 
             }.padding(.horizontal, 50)
         }
+        
+        
     }
 }
